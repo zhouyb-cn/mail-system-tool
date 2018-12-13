@@ -1,0 +1,48 @@
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /mail/?csrfmiddlewaretoken=fjRSot5l6pE7EU8rnmvn3I03K7Fpg9KDCsSaXj8gwEGQKfDMEVQDqyVq22zc2Og1 HTTP/1.1" 200 18272
+Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 33, in handleResult
+    fileinfos = json.load(bytes.decode(request.body))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 296, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+"POST /mail/handle/result HTTP/1.1" 500 17173
+"GET /mail/?csrfmiddlewaretoken=zvGootgO8bsyjwatzNde0vZwzu6CSbrLZ4nTeegMVdjQOIRnRRnMAv68jW3uuAJB HTTP/1.1" 200 18272
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /mail/?csrfmiddlewaretoken=zvGootgO8bsyjwatzNde0vZwzu6CSbrLZ4nTeegMVdjQOIRnRRnMAv68jW3uuAJB HTTP/1.1" 200 18272
+"POST /mail/handle/result HTTP/1.1" 200 7
+"GET /mail/?csrfmiddlewaretoken=xVAryM8qB3779mHjo8RNT4bxwiRWxjN1ijR8heN4dW7lQbSyqKsjhiL5Jp9Ic6u5 HTTP/1.1" 200 18272
+"GET /mail/ HTTP/1.1" 200 18272
+"POST /mail/handle/result HTTP/1.1" 200 7
+"GET /mail/?csrfmiddlewaretoken=CtQMtXeDuAH7IZOGyTQpsrfYpRZPkyFiRgKcFGZHNYtw8t7clSbYwGrV3o6Rl9Yt HTTP/1.1" 200 18272
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"POST /mail/handle/result HTTP/1.1" 200 7
+"GET /mail/?csrfmiddlewaretoken=ZtLOthH9Y6K20nUMPQRRJzAgoqoYCMAqtU3MNtCcZidvSeonoIOXHGNo2znkRyee HTTP/1.1" 200 18272
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"POST /mail/handle/result HTTP/1.1" 200 7
+"GET /mail/?csrfmiddlewaretoken=8yMF3oZdmTNFg8N7aOoDzjJ3O43VVQLaBPVUMemlzmd13brS8lTcimFlWlICdXtq HTTP/1.1" 200 18272

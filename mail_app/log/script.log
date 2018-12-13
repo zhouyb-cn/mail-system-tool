@@ -1,0 +1,645 @@
+2018-12-06 08:43:10,490 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-06 08:43:44,612 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 39, in handleResult
+    if file.file.strip == '':
+AttributeError: 'dict' object has no attribute 'file'
+2018-12-06 08:44:11,155 [Thread-4:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 39, in handleResult
+    if file.file.strip == '':
+AttributeError: 'dict' object has no attribute 'file'
+2018-12-06 08:47:57,669 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 39, in handleResult
+    if file.file.strip == '':
+AttributeError: 'dict' object has no attribute 'file'
+2018-12-06 08:51:23,332 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 39, in handleResult
+    logger.error(file.filename)
+AttributeError: 'dict' object has no attribute 'filename'
+2018-12-06 08:54:28,498 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 39, in handleResult
+    logger.error(file.filename)
+AttributeError: 'dict' object has no attribute 'filename'
+2018-12-06 08:56:55,086 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 40, in handleResult
+    if file.file.strip == '':
+AttributeError: 'dict' object has no attribute 'file'
+2018-12-06 09:00:38,667 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 41, in handleResult
+    shutil.copyfile(os.path.join(path, file.get('filename')), os.path.join(nojuanhao, file.get('filename')))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/pending/2018.11.30/答复 New Chinese Trademark Application for SURGICAL COUTURE BY LABRATORY in Class 25 Our Ref V677008CN1.msg'
+2018-12-06 09:00:59,558 [Thread-3:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 41, in handleResult
+    shutil.copyfile(os.path.join(path, file.get('filename')), os.path.join(nojuanhao, file.get('filename')))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/pending/2018.11.30/答复 New Chinese Trademark Application for SURGICAL COUTURE BY LABRATORY in Class 25 Our Ref V677008CN1.msg'
+2018-12-06 09:01:37,322 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 41, in handleResult
+    shutil.copyfile(os.path.join(path, file.get('filename')), os.path.join(nojuanhao, file.get('filename')))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/pending/2018.11.30/答复 New Chinese Trademark Application for SURGICAL COUTURE BY LABRATORY in Class 25 Our Ref V677008CN1.msg'
+2018-12-06 09:06:20,257 [Thread-3:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 41, in handleResult
+    shutil.copyfile(os.path.join(path, file.get('filename')), os.path.join(nojuanhao, file.get('filename')))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/pending/2018.11.30/答复 New Chinese Trademark Application for SURGICAL COUTURE BY LABRATORY in Class 25 Our Ref V677008CN1.msg'
+2018-12-06 09:06:55,824 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 41, in handleResult
+    shutil.copyfile(os.path.join(path, file.get('filename')), os.path.join(nojuanhao, file.get('filename')))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/pending/2018.11.30/答复 RE RE RE China-Y R TM38204CNWO O R UIT1806469 GJFS 1- Invoice & Filing Report -Deadline for Supplementing Further Arguments February 26 2019 -Review of Refusal against IR-1372633 for OMNIRES in class 11.msg'
+2018-12-06 10:17:46,705 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 50, in handleResult
+    second_split = first_split.split('-')
+AttributeError: 'list' object has no attribute 'split'
+2018-12-06 10:25:44,380 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 48, in handleResult
+    second_split = first_split.split('-')
+AttributeError: 'list' object has no attribute 'split'
+2018-12-06 10:29:29,243 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 48, in handleResult
+    second_split = first_split.split('-')
+AttributeError: 'list' object has no attribute 'split'
+2018-12-06 10:29:56,504 [Thread-3:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 48, in handleResult
+    second_split = first_split.split('-')
+AttributeError: 'list' object has no attribute 'split'
+2018-12-07 01:41:36,665 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 52, in handleResult
+    copy_file(os.path.join(path, filename), os.path.join(complete_path, second_split[0] + suffix))
+TypeError: copy_file() missing 1 required positional argument: 'dst'
+2018-12-07 01:47:50,324 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/handle/result
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 52, in handleResult
+    copy_file(os.path.join(path, filename), os.path.join(complete_path, second_split[0] + suffix))
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 67, in copy_file
+    copy_file(src, dst, count + 1)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 67, in copy_file
+    copy_file(src, dst, count + 1)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 67, in copy_file
+    copy_file(src, dst, count + 1)
+  [Previous line repeated 934 more times]
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 66, in copy_file
+    if os.path.exists(dst + ext):
+RecursionError: maximum recursion depth exceeded
+2018-12-07 03:03:35,354 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 15, in index
+    files = os.listdir(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/pending/2018.11.30'
+2018-12-07 03:22:09,400 [Thread-8:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-07 03:24:10,316 [Thread-10:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-07 03:27:46,708 [Thread-8:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-07 05:41:54,024 [Thread-6:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-07 05:47:25,507 [Thread-6:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-07 05:51:05,388 [Thread-6:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-07 05:52:44,828 [Thread-6:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-07 05:55:04,552 [Thread-6:123145318068224] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-07 06:32:38,298 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-07 06:38:02,787 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-10 02:27:23,184 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 18, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-10 06:57:06,828 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+2018-12-10 06:58:50,141 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view mail_app.views.index didn't return an HttpResponse object. It returned None instead.
+2018-12-10 06:59:54,167 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 20, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-10 07:03:05,692 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 21, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-10 07:03:07,817 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 21, in index
+    message = extract_msg.Message(os.path.join(path, file))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/extract_msg/message.py", line 41, in __init__
+    olefile.OleFileIO.__init__(self, path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1075, in __init__
+    self.open(filename, write_mode=write_mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1192, in open
+    self._raise_defect(DEFECT_FATAL, "not an OLE2 structured storage file")
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/olefile/olefile.py", line 1105, in _raise_defect
+    raise exception_type(message)
+OSError: not an OLE2 structured storage file
+2018-12-13 01:52:16,709 [Thread-5:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 19, in index
+    files = os.listdir(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/pending/2018.12.11'
+2018-12-13 01:52:45,439 [Thread-5:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 19, in index
+    files = os.listdir(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/pending/2018.12.11'
+2018-12-13 01:54:21,892 [Thread-5:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 19, in index
+    files = os.listdir(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/pending/2018.12.11'
+2018-12-13 02:00:54,700 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 16, in index
+    path = os.path.join(settings.BASE_DIR, 'mail_app', 'pending', directory)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/posixpath.py", line 92, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/genericpath.py", line 149, in _check_arg_types
+    (funcname, s.__class__.__name__)) from None
+TypeError: join() argument must be str or bytes, not 'datetime'
+2018-12-13 02:01:22,370 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 16, in index
+    return directory
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/posixpath.py", line 92, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/genericpath.py", line 149, in _check_arg_types
+    (funcname, s.__class__.__name__)) from None
+TypeError: join() argument must be str or bytes, not 'datetime'
+2018-12-13 02:01:55,770 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 17, in index
+    path = os.path.join(settings.BASE_DIR, 'mail_app', 'pending', directory)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/posixpath.py", line 92, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/genericpath.py", line 149, in _check_arg_types
+    (funcname, s.__class__.__name__)) from None
+TypeError: join() argument must be str or bytes, not 'datetime'
+2018-12-13 10:10:14,308 [Thread-2:123145312813056] [django.request:228] [log:log_response] [ERROR]- Internal Server Error: /mail/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yanbo/PycharmProjects/mail_system_tool/mail_app/views.py", line 17, in index
+    path = os.path.join(settings.BASE_DIR, 'mail_app', 'pending', directory)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/posixpath.py", line 92, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/genericpath.py", line 149, in _check_arg_types
+    (funcname, s.__class__.__name__)) from None
+TypeError: join() argument must be str or bytes, not 'datetime'
